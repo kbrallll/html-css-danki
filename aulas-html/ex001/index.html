@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de ATRIBUTO própria</title>
+    <style>
+        @charset "UTF=8";
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body{
+            background-color: lightgrey;
+        }
+
+        h1 {
+            font-size: 2em;
+            font-weight: bolder;
+            text-align: center;
+        }
+
+        p{
+            font-size: 1.2em;
+            text-align: justify;
+            width: 50%;
+            margin: auto;
+            margin-top: 10px;
+        }
+
+        /*AQUI ESTÁ O EXMPLO DE ATACAR UM ATRIBUTO PRÓPRIO */
+
+        [name="paragrafo"] {
+            background-color: blue;
+        }
+
+        input {
+            margin: 10%;
+            height: 300px;
+            width: 300px;
+        }
+
+        [placeholder] {
+            background-color: aquamarine;
+            text-align: center;
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Atacando uma Tag própria na folha de estilo !!!</h1>
+    <p name="paragrafo">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptatem voluptates vel eos, nam voluptas adipisci deleniti dicta. Ab maiores, rem aliquid commodi quisquam voluptatum recusandae. Ullam iusto magnam totam?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deleniti repellendus ut dicta, deserunt laboriosam aut libero quidem? Hic ex tenetur unde dignissimos numquam, delectus rerum eligendi nobis quis reiciendis!
+    </p>
+    <input type="text" placeholder="insira aqui seu texto">
+</body>
+</html>
