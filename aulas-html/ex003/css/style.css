@@ -1,0 +1,70 @@
+@charset "UTF=8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    background-color: #ccc;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    /* column | row-reverse | column-reverse */
+
+    flex-wrap: nowrap;
+    /* wrap | wrap-reverse */
+
+    /*  flex-flow: row nowrap;
+        Aqui é a soma das duas propriedades acima*/
+
+    justify-content: flex-start;
+    /*Alinhamento horizontal  flex-end | center | space-between | space-around */
+
+    align-items: stretch;
+    /*Alinhamento Vertical flex-start | flex-end | center | baseline */
+
+    align-content: flex-start;
+    /*Alinhamento Horizontal com quebra de linha flex-start | flex-end | center | space-between | space-around */
+
+}
+
+.item {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin: 5px;
+    height: 30px;
+
+    flex-grow: 1;
+    /*Está relacionado com a largura dos itens*/
+
+    flex-shrink: 1;
+    /*Está relacionado a largura diminuindo o item, mudar os valores da propriedade  para nowrap e aumentar o flex-basis*/
+
+    flex-basis: 300px;
+
+
+}
+
+/* PROPRIEDADES VISTA PARA ITENS 
+
+ORDER - ORDEM DOS ITENS
+
+ALIGN-SELF - ALINHAMENTO DE UM UNICO ITEM - LEMBRAR DE TIRAR O ALIGHN-CONTEN */
+
+.article-01 {
+    flex-shrink: 3;
+}
+
+.article-02 {
+    
+}
+
+.article-03 {
+    
+}
+
+.article-04 {
+
+}
