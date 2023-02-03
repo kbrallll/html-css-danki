@@ -1,0 +1,84 @@
+@charset "UTF=8";
+
+:root{
+    --cor0: #191c03;
+    --cor1: #02735E;
+    --cor2: #03A678;
+    --cor3: #F27405;
+    --cor4: #731702;
+    --cor5: #ffffff;
+    --fonte0: 'Source Sans Pro', sans-serif;
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*RESET*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: var(--fonte0)
+}
+
+nav{
+    list-style: none;
+}
+
+a {
+    text-decoration: none; 
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+/*HEADER*/
+header {
+    width: 100%;
+    position: absolute;
+    /*Definindo a posição absoluta, ele vai ficar por cima da imagem hero */
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+header img {
+    width: 200px;
+}
+
+header nav {
+    display: flex;
+}
+
+header li {
+    margin: 0px 15px;
+}
+
+header li:first-child{
+    margin-left: 0px;
+}
+
+header li:last-child{
+    margin-right: 0px;
+}
+
+header li a {
+    color: var(--cor0);
+}
+
+/*Esta é uma forma de usar media screen para telas menores*/
+
+@media (max-width: 762px) {
+    header {
+        flex-direction: column;
+    }
+
+    header img {
+        margin-bottom: 15px;
+    }
+}

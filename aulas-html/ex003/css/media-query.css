@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+:root{
+        --cor0: #191c03;
+        --cor1: #02735E;
+        --cor2: #03A678;
+        --cor3: #F27405;
+        --cor4: #731702;
+        --cor5: #ffffff;
+        --fonte0: 'Source Sans Pro', sans-serif;
+        --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    /*RESET*/
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-size: 100%;
+        font-family: var(--fonte0)
+    }
+    
+    nav{
+        list-style: none;
+    }
+    
+    a {
+        text-decoration: none; 
+        cursor: pointer;
+        opacity: 0.8;
+    }
+    
+    a:hover {
+        opacity: 1;
+    }
+    
+
+/*Todas as Demais Mídias*/
+
+/*  
+        Typical Device Breakpoints
+
+Pequenas Telas: até 600px
+Celular: 600px até 768px;
+Tablet: 768px até 992px;
+Desktop: 992px até 1200px;
+Grandes Telas: acima de 1200px;
+
+
+        Essa configuração eu ignoro pq eu ja fiz a minha versão para dispositivo móvel no style css
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    
+}
+
+*/
+
+/*Impressão*/
+@media print { 
+
+}
+
+/*Mídia Tablet*/
+@media screen (min-width: 768px) and (max-width: 992px) {
+/*HEADER*/
+header {
+        width: 100%;
+        position: absolute;
+        /*Definindo a posição absoluta, ele vai ficar por cima da imagem hero */
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 50px;
+        
+    }
+    
+    header img {
+        width: 200px;
+    }
+    
+    header nav {
+        display: flex;
+    }
+    
+    header li {
+        margin: 0px 15px;
+    }
+    
+    header li:first-child{
+        margin-left: 0px;
+    }
+    
+    header li:last-child{
+        margin-right: 0px;
+    }
+    
+    header li a {
+        color: var(--cor0);
+    }  
+}
+
+/*Mídia Desktop*/
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+       /*HEADER*/
+header {
+        width: 100%;
+        position: absolute;
+        /*Definindo a posição absoluta, ele vai ficar por cima da imagem hero */
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 50px;
+        
+    }
+    
+    header img {
+        width: 200px;
+    }
+    
+    header nav {
+        display: flex;
+    }
+    
+    header li {
+        margin: 0px 15px;
+    }
+    
+    header li:first-child{
+        margin-left: 0px;
+    }
+    
+    header li:last-child{
+        margin-right: 0px;
+    }
+    
+    header li a {
+        color: var(--cor0);
+    } 
+    
+}
+
+/*Mídia Grandes Telas*/
+@media screen and (min-width: 1200px) {
+        /*HEADER*/
+header {
+        width: 100%;
+        position: absolute;
+        /*Definindo a posição absoluta, ele vai ficar por cima da imagem hero */
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 50px;
+        
+    }
+    
+    header img {
+        width: 200px;
+    }
+    
+    header nav {
+        display: flex;
+    }
+    
+    header li {
+        margin: 0px 15px;
+    }
+    
+    header li:first-child{
+        margin-left: 0px;
+    }
+    
+    header li:last-child{
+        margin-right: 0px;
+    }
+    
+    header li a {
+        color: var(--cor0);
+    }
+    
+}
