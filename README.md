@@ -8,5 +8,7 @@ Acesse aqui o link para ver o exercícios do Curso da Danki-code
 
 <a href="https://kbrallll.github.io/html-css-danki/aulas-html/ex003/index2.html">Projeto Hotel !!!</a>
 
+<a href="https://kbrallll.github.io/html-css-danki/aulas-html/ex004/index.html">Teste de icones do Fonte Awesome com flex box !!!</a>
+
 
  
