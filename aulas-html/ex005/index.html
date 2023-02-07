@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Animação</title>
+    <style>
+        @charset "UTF=8";
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        @keyframes anima1 {
+            0%   {background-color:red; left:0px; top:0px;}
+            25%  {background-color:yellow; left:400px; top:0px;}
+            50%  {background-color:blue; left:400px; top:200px;}
+            75%  {background-color:green; left:0px; top:200px;}
+            100% {background-color:red; left:0px; top:0px;}
+        }
+
+        div {
+            width: 300px;
+            height: 300px;
+            position: relative;
+            background-color: red;
+            animation-name: anima1;
+            animation-duration: 5s;
+        }
+
+        p{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            text-align: center;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Animação</p>
+    </div>
+</body>
+</html>
