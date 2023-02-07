@@ -346,6 +346,11 @@ footer ul li {
     list-style: none;
 }
 
+footer ul li a i {
+    font-size: 50px;
+    color: var(--cor0);
+}
+
 footer ul li:last-child {
     margin-right: 0px;
 }
